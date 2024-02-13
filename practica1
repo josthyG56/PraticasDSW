@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>¿QUÉ ES HTML?</title>
+</head>
+
+<body>
+    <H1> ¿QUÉ ES HTML? </H1>
+    <p> <strong>HTML </strong> son las siglas de <Em>(Hypertext Markup Languaje)</Em>, que puede traducirse como
+        lenguaje de marcas o marcado de
+        hipertexto</p>
+    <p> El lenguaje <strong>HTML </strong> se emplea para crear las páginas web. Es muy fácil ver el código <strong>HTML </strong> de una página web, la
+        opción exacta cambia de un navegador a otro y también puede cambiar de una versión a otra de un mismo navegador,
+        pero suelen tener un nombre similar. </p>
+    <strong></strong>
+    <p>El lenguaje <strong>HTML </strong> sirve para describir la estructura básica de una página y organizar la forma en que se mostrará
+        su
+        contenido, además de que <strong>HTML </strong> permite incluir enlaces hacia otras páginas o documentos.</p>
+
+    <p> <em> <strong>HTML se compone de etiquetas que se escriben entre los simbolos menor que y mayor que. </strong></em></p>
+
+    <p>Los inicios del lenguaje <strong>HTML </strong> se remontan al año 1990, cuando <em>Tim Berners-Lee </em>creó la primera página web.</p>
+</body>
+</html>
