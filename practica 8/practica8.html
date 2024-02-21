@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario1</title>
+    <style>
+        body {
+            align-content: center;
+            width: 80%;
+             height: 80%;
+            background-color: #00B19D;
+            font: oblique bold 120% cursive;
+            color: black;
+        }
+        div {
+           background-color:#A9ECE5;
+           color: black;
+           font-size: small;
+           font: 150% sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>MI primer formulario</h1>
+        <table >
+            <form action="procesar_formulario.php" method="get">
+                <label for="nombre"> <strong>Nombre (máximo 10 caracteres):</strong></label><br>
+                <input type="text" id="nombre" name="nombre" maxlength="10" required><br><br>
+
+                <label for="edad"> <strong>Edad (entre 10 y 18 años):</strong> </label><br>
+                <input type="number" id="edad" name="edad" min="10" max="18" required><br><br>
+
+                <label for="genero"><strong>Género:</strong></label><br>
+                <input type="radio" name="generos" id="">Masculino
+                <br>
+                <input type="radio" name="generos" id="">Femenino
+                <br><br>
+
+                <label for="comentarios"> <strong>Comentarios (máximo 6 líneas):</strong> </label><br>
+                <textarea id="comentarios" name="comentarios" rows="6" maxlength="300"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>
