@@ -1,0 +1,57 @@
+body {
+    height: 100vh; /* Altura del cuerpo al 100% del viewport */
+    margin: 1; /* Con márgenes */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Dirección de la disposición de los elementos como columna */
+}
+
+#header, #nav, #contenedor {
+    width: 100%; /* Ancho al 100% del contenedor principal */
+}
+
+#header {
+    height: 10%; /* Altura del encabezado y pie de página al 10% del cuerpo */
+    margin-bottom: 10px; /* Margen inferior para separar del nav */
+}
+
+#nav {
+    height: 5%; /* Altura del menú al 5% del cuerpo */
+    margin-bottom: 10px; /* Margen inferior para separar del contenedor */
+    background: rgb(0, 110, 18); /* Fondo rosa para el menú */
+}
+
+#contenedor {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    height: 65%; /* Altura del contenedor al 65% del cuerpo */
+    justify-content: space-around; /* Distribución uniforme de los elementos */
+    background-color: #f5f5dc; /* Color de fondo beige para el contenedor */
+}
+
+.article, .section {
+    margin: 0 10px; /* Margen de 10px a la izquierda y derecha */
+    height: 90%; /* Altura del artículo y sección al 90% del contenedor */
+}
+
+.article {
+    width: 20%; /* Ancho del artículo al 20% del contenedor */
+    background-color: #87ceeb; /* Color de fondo azul claro para el artículo */
+}
+
+.section {
+    width: 50%; /* Ancho de la sección al 50% del contenedor */
+    background-color: #ffff00; /* Color de fondo amarillo para la sección */
+}
+
+
+#header {
+    background-color: #98fb98; /* Color de fondo verde claro para el encabezado */
+}
+
+#footer {
+    background-color: #ff6d86e8; /* Color de fondo rosa para el pie de página */
+    height: 10%; /* Altura del pie de página al 10% del cuerpo */
+    width: 100%; /* Ancho al 100% del contenedor principal */
+    position: fixed; /* Fijar el pie de página en la parte inferior */
+    bottom: 0; /* Pegar el pie de página en la parte inferior */
+}
+
