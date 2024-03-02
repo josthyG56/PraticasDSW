@@ -1,0 +1,40 @@
+header, nav, footer, #contenedor
+{
+    width: 100%;
+    background: tomato;
+}
+body
+{
+    height:100vh;
+}
+header, footer
+{
+    height: 10%;
+    background: skyblue;
+}
+nav
+{
+    height: 5%;
+    background: pink;
+}
+#contenedor
+{
+    display: flex;
+    height: 75%;
+    justify-content: space-around;
+}
+article, section
+{
+    height: 90%;
+
+}
+article
+{
+    width: 20%;
+    background: skyblue;
+}
+section
+{
+    width: 50%;
+    background: yellow;
+}
