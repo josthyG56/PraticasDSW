@@ -1,0 +1,58 @@
+*{
+    border-radius: 10px;
+}
+
+body {
+    /*ALUMNO - Fausto Joshua Ramirez Meza*/
+    margin: 0;
+    padding: 0;
+    font-size: 1.6vw;
+    color: red;
+}
+ 
+header, nav, footer {
+    width: 70%;
+    height: 50px;
+    background-color: #3a3a3a;
+    margin: 10px auto;
+}
+
+.contenido {
+    width: 70%;
+    height: 350px;
+    margin: 10px auto;
+    display: flex;
+}
+
+section {
+    width: 65%;
+    height: 350px;
+    background-color: #747474;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.a1 {
+    margin: 10px auto;
+    width: 60%;
+    height: 20%; 
+    background-color: #f9ffd2;
+ }
+
+aside {
+    width: 30%;
+    height: 350px;
+    background-color: #747474;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.a2 {
+    margin: 10px auto;
+    width: 60%;
+    height: 20%; 
+    background-color: #f9ffd2;
+}
