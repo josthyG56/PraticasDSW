@@ -1,0 +1,52 @@
+body{
+    background-color: aquamarine;
+    font-size: Arial;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+.d1{
+    height: 8vh;
+    width: 8vh;
+    color: rgb(122, 99, 255);
+    background-color: rgb(250, 150, 0);
+    margin: auto;
+}
+
+em{
+    height: 8em;
+    width: 8em;
+    color: yellow;
+    background-color: brown;
+    margin: auto;
+}
+p{
+    height: 8vw;
+    width: 8vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 42, 165);
+    margin: auto;
+
+}
+article{
+    height: 8rem;
+    width: 8rem;
+    color: rgb(200, 238, 217);
+    background-color: rgba(28, 66, 170, 0.884);
+    margin: auto;
+}
+footer{
+    max-width: 800mm;
+    max-height: 800mm;
+    color: rgb(255, 217, 4);
+    background-color: rgb(116, 0, 0);
+    margin: auto;
+}
+.d2 {
+    min-height: 8in;
+    min-width: 8in;
+    color: rgb(29, 4, 255);
+    background-color: rgb(235, 91, 91);
+    margin: auto;
+}
