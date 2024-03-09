@@ -1,0 +1,16 @@
+ 
+.elemento:hover {
+    color: red;
+}
+
+.boton:active {
+    background-color: green;
+}
+
+li:first-child {
+    color: blue;
+}
+
+li:nth-child(odd) {
+    background-color: lightgray;
+}
