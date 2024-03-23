@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de los arreglos en JavaScript</title>
+    <!-- Ramirez Meza Fausto Joshua -->
+</head>
+<body>
+    <h2>Ejercicio #22</h2>
+    <script>
+        /* Fausto Joshua Ramirez Meza*/
+        //Dias de las semana
+        let diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+        // Visualizar elementos
+        alert("Días de la semana: " + diasSemana.join(", "));
+        // Agregar un día al final
+        diasSemana.push("NuevoDía");
+        // Eliminar el primer día de la semana
+        let primerDia = diasSemana.shift();
+        alert("Días de la semana actualizados: " + diasSemana.join(", "));
+        alert("Primer día eliminado: " + primerDia);
+
+        //Ciclo While
+        let num1 = 1;
+        let suma = 0;
+
+        while (num1 <= 5) {
+            suma += num1;
+            num1++;
+        }
+
+        alert("La suma de los números del 1 al 5 es: " + suma);
+
+        //Ciclo Do While 
+        let num2 = 5;
+        let factorial = 1;
+        let contador = 1;
+
+        do {
+            factorial *= contador;
+            contador++;
+        } while (contador <= num2);
+
+        alert("El factorial de " + num2 + " es: " + factorial);
+
+        //Ciclo For
+        for (let i = 1; i <= 7; i++) {
+            if (i === 4) {
+                alert("Soy el 4to");
+            } else {
+                alert("Hola");
+            }
+        }
+        alert("Acabamos de saludar");
+
+        //Ciclo For -in
+        const meses1 = ['enero1', 'febrero1', 'marzo1', 'abril1', 'mayo1', 'junio1', 'julio1', 'agosto1', 'septiembre1', 'octubre1', 'noviembre1'];
+
+        for (let indice in meses1) {
+            alert(meses1[indice]);
+        }
+
+        //Ciclo For Each
+        const meses2 = ['enero2', 'febrero2', 'marzo2', 'abril2', 'mayo2', 'junio2', 'julio2', 'agosto2', 'septiembre2', 'octubre2', 'noviembre2'];
+
+        meses2.forEach(function (mes) {
+            alert(mes);
+        });
+
+        //Ciclo for...of 
+        const meses = ['enero3', 'febrero3', 'marzo3', 'abril3', 'mayo3', 'junio3', 'julio3', 'agosto3', 'septiembre3', 'octubre3', 'noviembre3'];
+
+        for (let mes of meses) {
+            alert(mes);
+        }
+
+        //Modificacion de arreglo For
+        // Agregar diciembre fuera del arreglo
+        const diciembre = 'diciembre3';
+
+        // Mostrar los meses omitiendo julio
+        alert('Mostrando todos los meses, omitiendo julio:');
+        for (let mes of meses) {
+            if (mes !== 'julio3') {
+                alert(mes);
+            }
+        }
+
+        // Mostrar todos los meses, incluido diciembre
+        meses.push(diciembre);
+        alert('Mostrando todos los meses, incluido diciembre:');
+        for (let mes of meses) {
+            alert(mes);
+        }
+    </script>
+</body>
+
+</html>
