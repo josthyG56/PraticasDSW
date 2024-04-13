@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title>
+    <style>
+        /*AlLUMNO; FAUSTO JOSHUA RAMIREZ MEZA  1284721*/
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+
+        body {
+            background-color: beige;
+            color: #8B4513;
+            font-size: 35px;
+            font-family: 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            color: rgb(0, 0, 0);
+            background-color: #64c1ff;
+            border: 2px solid #6643ff;/* Café oscuro */
+            border-radius: 20px;/* Contorno semi circular */
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-family: 'Crimson Pro', serif;
+            color: sienna;
+            font-size: large;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        input[type="number"] {
+            width: 65px;
+            padding: 5px;
+            border: 1px solid #5fffdc;
+            border-radius: 5px;
+            background-color:rgb(130, 211, 238);
+            color:black;
+            font-size: larger;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: darkblue;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Capturar las calificaciones de las materias:</h2>
+    <p>Se aceptan únicamente números dentro del rango de 10 a 100 como límite.</p>
+    <div class="container">
+        <form>
+            <label for="nota1">Algebra :</label>
+            <input type="number" id="nota1" min="10" max="100"><br><br>
+
+            <label for="nota2">Fisica 2:</label>
+            <input type="number" id="nota2" min="10" max="100"><br><br>
+
+            <label for="nota3">Fundamentos del Diseño:</label>
+            <input type="number" id="nota3" min="10" max="100"><br><br>
+
+            <label for="nota4">Matematicas 4:</label>
+            <input type="number" id="nota4" min="10" max="100"><br><br>
+
+            <label for="nota5">Quimica :</label>
+            <input type="number" id="nota5" min="10" max="100"><br><br>
+
+            <label for="nota6">Gestion de Redes:</label>
+            <input type="number" id="nota6" min="10" max="100"><br><br>
+
+            <label for="nota7">Administracion de proyectos:</label>
+            <input type="number" id="nota7" min="10" max="100"><br><br>
+
+            <label for="nota8">Programacion en C#:</label>
+            <input type="number" id="nota8" min="10" max="100"><br><br>
+
+            <input type="button" value="Calcular Promedio" onclick="calcularPromedio()">
+        </form>
+    </div>
+    <script>
+        function calcularPromedio() {
+            // Obtener las notas de cada asignatura
+            var notas = [];
+            for (var i = 1; i <= 8; i++) {
+                var nota = parseFloat(document.getElementById("nota" + i).value);
+                // Validar que el campo no esté vacío
+                if (isNaN(nota) || nota === "") {
+                    alert("Por favor, complete todas las notas.");
+                    // Seleccionar el campo que falta llenar
+                    document.getElementById("nota" + i).focus();
+                    return;
+                }
+                notas.push(nota);
+            }
+
+            // Calcular el promedio
+            var promedio = notas.reduce((total, nota) => total + nota, 0) / notas.length;
+
+            // Mostrar el resultado
+            alert("El promedio final es: " + promedio.toFixed(2));
+
+            // Verificar si está exento de ordinario o no
+            if (promedio > 85) {
+                alert("¡Estás exento de ordinario!");
+            } else {
+                alert("Debes presentar examen ordinario.");
+            }
+        }
+    </script>
+</body>
+
+</html>
