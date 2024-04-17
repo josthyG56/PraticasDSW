@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulario Demo</title>
+  <!-- #region Estilos -->
+  <style media="screen">
+    /*AlLUMNO; FAUSTO JOSHUA RAMIREZ MEZA  1284721*/
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+    /* ============== Sección 1: Estilos generales ============== */
+    body {
+      background-image: url(./image/space.png);
+      font-size: 25px;
+      font-family: 'Trebuchet MS', sans-serif;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .formato {
+      font-family: 'Crimson Pro', serif;
+      height: 600px;
+      width: 400px;
+      margin: 50px auto;
+      color: rgb(0, 0, 0);
+      background-color: beige;
+      border: 2px solid #03000e;
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    h2 {
+      font-family: 'Crimson Pro', serif;
+      color: sandybrown;
+      font-size: large;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: darkred;
+      font-size: large;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    td {
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    table {
+      align-items: center;
+      width: 100%;
+      border-collapse: collapse;
+      align-content: center;
+    }
+
+    input[type="text"] {
+      margin: 5% auto;
+      width: 150px;
+      padding: 2px;
+      border: 2px solid sandybrown;
+      border-radius: 2px;
+      background-color: wheat;
+      color: black;
+      font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type="number"] {
+      margin: 5% auto;
+      width: 150px;
+      padding: 2px;
+      border: 2px solid sandybrown;
+      border-radius: 2px;
+      background-color: wheat;
+      color: black;
+      font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type="submit"] {
+      margin-top: 25px;
+      padding: 10px 150px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+      align-items: center;
+    }
+
+    select {
+      margin: 5% auto;
+      width: 150px;
+      padding: 2px;
+      border: 2px solid sandybrown;
+      border-radius: 2px;
+      background-color: wheat;
+      color: black;
+      font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    td textarea {
+      margin: 5% auto;
+      width: 150px;
+      padding: 2px;
+      border: 2px solid sandybrown;
+      border-radius: 2px;
+      background-color: wheat;
+      color: black;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- // region Formulario -->
+  <h2>Formulario de Registro</h2>
+  <form class="formato" action=" " method="post">
+    <table>
+      <h3>Ingrese sus datos</h3>
+      <tr>
+        <td>Nombres:</td>
+        <td>Apellidos:</td>
+      </tr>
+      <tr>
+        <td><input type="text" name="nombre"></td>
+        <td><input type="text" name="apellidos"></td>
+      </tr>
+      <tr>
+        <td>Edad:</td>
+        <td>Sexo:</td>
+      </tr>
+      <tr>
+        <td><input type="number"></td>
+        <td><select name="Sexo" id="2">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>Cuidad:</td>
+        <td>Correo:</td>
+      </tr>
+      <tr>
+        <td><select name="cuidad" id="1">
+            <option value="Ensenada">Ensenada</option>
+            <option value="Tijuana">Tijuana</option>
+            <option value="Mexicali">Mexicali</option>
+            <option value="Rosarito">Rosarito</option>
+            <option value="Tecate">Tecate</option>
+          </select></td>
+        <td><input type="text" name="otro1"></td>
+      </tr>
+      <tr>
+        <td>Licencia de conducir:</td>
+        <td>Celular: (10 digitos)</td>
+      </tr>
+      <tr>
+        <td><select name="camisa" id="7">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+          </select></td>
+        <td><input type="text" name="Celular"></td>
+      </tr>
+      <tr>
+        <td>Transporte:</td>
+        <td>Comentarios:</td>
+      </tr>
+      <tr>
+        <td><select name="camisa" id="7">
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select></td>
+        <td rowspan="3"><textarea name="" id="" cols="20" rows="4"></textarea></td>
+      </tr>
+      <tr>
+        <td>Camisa:</td>
+        <!--td></td-->
+      </tr>
+      <tr>
+        <td><select name="camisa" id="7">
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select></td>
+        <!--td></td-->
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Enviar" class="boton"></td>
+        <!--td></td-->
+      </tr>
+    </table>
+  </form>
+  <script type="text/javascript">
+    // #region Javascript
+
+  </script>
+</body>
+
+</html>
