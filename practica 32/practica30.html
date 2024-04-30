@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulario Demo</title>
+  <link rel="stylesheet" href="practica30.css">
+</head>
+
+<body>
+  <!-- #region Formulario -->
+  <h2>Formulario de Registro</h2>
+  <form action="conect.php" method="POST" class="formato">
+    <table border="0">
+      <h3>Ingrese sus datos</h3>
+      <tr>
+        <td>Nombre:</td>
+        <td>Apellidos:</td>
+      </tr>
+      <tr>
+        <td><input type="text" name="nombre" required></td>
+        <td><input type="text" name="apellidos" required></td>
+      </tr>
+      <tr>
+        <td>Edad:</td>
+        <td>Sexo:</td>
+      </tr>
+      <tr>
+        <td><input type="number" name="edad" min="18" max="60" required></td>
+        <td><select name="sexo" required>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>Ciudad:</td>
+        <td>Correo:</td>
+      </tr>
+      <tr>
+        <td><select name="ciudad" id="ciudad" required> <!-- funcion habilitar() -->
+            <option value="Ensenada">Ensenada</option>
+            <option value="Tijuana">Tijuana</option>
+            <option value="Mexicali">Mexicali</option>
+            <option value="Rosarito">Rosarito</option>
+            <option value="Tecate">Tecate</option>
+          </select></td>
+        <td><input type="text" name="correo" required></td>
+      </tr>
+      <tr>
+        <td>Comentarios:</td>
+        <td>Teléfono:(10 dígitos)</td>
+      </tr>
+      <tr>
+        <td rowspan="1"><textarea name="comentarios" id="comentarios" cols="20" rows="4"></textarea></td>
+        <td><input type="text" name="telefono" title="Introduzca un número de teléfono válido de 10 dígitos"></td>
+      </tr>
+      <tr>
+        <td>Camisa:</td>
+        <td>Transporte:</td>
+      </tr>
+      <tr>
+        <td><select name="camisa" id="camisa" onchange="aparecer()">
+            <option value="null"> ---- </option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select></td>
+        <td><select rowspan="1" name="transporte" id="transporte">
+            <option value="null"> ---- </option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select></td>
+      </tr>
+      <tr class="talla">
+        <td>Talla:</td>
+      </tr>
+      <tr class="talla">
+        <td><select name="talla">
+            <option value="null"> ---- </option>
+            <option value="chica">Chica</option>
+            <option value="mediana">Mediana</option>
+            <option value="grande">Grande</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" name="submit" value="Enviar"></td>
+      </tr>
+    </table>
+  </form>
+</form>
+  <script src="practica30.js"></script>
+</body>
+
+</html>

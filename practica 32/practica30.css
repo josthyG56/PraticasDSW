@@ -1,0 +1,125 @@
+ /*AlLUMNO; FAUSTO JOSHUA RAMIREZ MEZA  1284721*/
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+ /* ============== Sección 1: Estilos generales ============== */
+ body {
+   background-image: url(./image/space.png);
+   background-color: black;
+   font-family: 'Trebuchet MS', sans-serif;
+   box-sizing: border-box;
+   text-align: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: center;
+   font-size: auto;
+ }
+
+ .formato {
+   font-family: 'Crimson Pro', serif;
+   height: 600px;
+   width: 400px;
+   margin: 50px auto;
+   color: rgb(0, 0, 0);
+   background-color: beige;
+   border: 2px solid #03000e;
+   border-radius: 20px;
+   padding: 15px;
+   text-align: center;
+   font-size: 20px;
+ }
+
+ h2 {
+   font-family: 'Crimson Pro', serif;
+   color: sandybrown;
+   font-size: large;
+   text-align: center;
+   font-size: 25px;
+ }
+
+ h3 {
+   font-family: Arial, Helvetica, sans-serif;
+   color: darkred;
+   font-size: large;
+   text-align: center;
+   font-size: 25px;
+ }
+
+ p {
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-size: 15px;
+   text-align: center;
+ }
+
+ td {
+   color: black;
+   font-size: 20px;
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ table {
+   align-items: center;
+   width: 100%;
+   border-collapse: collapse;
+   align-content: center;
+ }
+
+ input[type="text"] {
+   margin: 5% auto;
+   width: 150px;
+   padding: 2px;
+   border: 2px solid sandybrown;
+   border-radius: 2px;
+   background-color: wheat;
+   color: black;
+   font-size: medium;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ input[type="number"] {
+   margin: 5% auto;
+   width: 150px;
+   padding: 2px;
+   border: 2px solid sandybrown;
+   border-radius: 2px;
+   background-color: wheat;
+   color: black;
+   font-size: medium;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ input[type="submit"] {
+   margin-top: 5px;
+   padding: 10px 150px;
+   background-color: darkblue;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: medium;
+   font-family: Arial, Helvetica, sans-serif;
+   align-items: center;
+ }
+
+ select {
+   margin: 5% auto;
+   width: 150px;
+   padding: 2px;
+   border: 2px solid sandybrown;
+   border-radius: 2px;
+   background-color: wheat;
+   color: black;
+   font-size: medium;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ td textarea {
+   width: auto;
+   border: 2px solid sandybrown;
+   border-radius: 2px;
+   background-color: wheat;
+   color: black;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+   
+ }
